@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #E4EBF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cont{
+    position: relative;
+    width: 80%;
+    max-width: 180px;
+    display: grid;
+    place-items: center;
+    padding: 50px 30px 30px 30px;
+    border-radius: 50%;
+    background-color: #006AFF;
+}
+#body{
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 15px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+#cont:active{
+    scale: .8;
+}
+#body span{
+    width: 10px;
+    height: 10px;
+    background-color: #006AFF;
+    border-radius: 50%;
+}
+#extending{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    left: -10%;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+#float{
+    position: absolute;
+    background-color: #ff1a1a;
+    padding: 5px 10px;
+    border-radius: 50%;
+    top: 21%;
+    right: 20px;
+    opacity: .95;
+    font-family: sans-serif;
+    color: white;
+}
+#alertCont{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+#alert{
+    position: absolute;
+    background-color: white;
+    padding: 0 20px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    width: 80%;
+    max-width: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#alert h1{
+    background-color: #006AFF;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+}
+#alert p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.87);
+}
+#alert button{
+    display: block;
+    margin: 20px auto 0 auto;
+    background-color: #006AFF;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 20%;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+#messageAlert{
+    position: absolute;
+    top: 70%;
+    font-family: 'Roboto', sans-serif;
+}
