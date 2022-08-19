@@ -20,9 +20,27 @@ alertBox = document.querySelector('#alertCont'),
 float = document.querySelector('#float'),
 cont = document.querySelector('#cont');
 
+
+//function to display the alert box
 function displayCont(){
+    //display the alert box
     alertBox.style.display = "block";
-    gsap.from("#alert", {duration: 1, scale: 0, delay: 1, opacity: .5, ease: "bounce"});
+    //display animation for the alert box
+    gsap.from
+    ("#alert", 
+    //animation properties
+    //duration
+    {duration: 1, 
+    //scale size of box from 0 to 1
+    scale: 0,
+    //delay for the animation
+    delay: 1, 
+    //aimation visibility
+    opacity: .5, 
+    //animation style
+    ease: "bounce"});
+
+
     cont.removeEventListener("click", displayCont);
     document.querySelector("#messageAlert").style.display = "none";
 }
