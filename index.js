@@ -40,8 +40,9 @@ function displayCont(){
     //animation style
     ease: "bounce"});
 
-
+    //remove the click event from the button
     cont.removeEventListener("click", displayCont);
+    //hide the alert writing
     document.querySelector("#messageAlert").style.display = "none";
 }
 cont.addEventListener('click', displayCont);
