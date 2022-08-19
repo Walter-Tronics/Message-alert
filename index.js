@@ -1,4 +1,6 @@
-var tl = gsap.timeline({repeat: 3, repeatDelay: 1});
+window.onload=()=>{
+
+    var tl = gsap.timeline({repeat: 3, repeatDelay: 1});
 tl.from("#float", {duration: 1.5, scale: .5, ease: "elastic"});
 
 let hideBtn = document.querySelector('#hide'),
@@ -21,3 +23,5 @@ hideBtn.addEventListener('click', ()=>{
         gsap.to("#float", {duration: 1.5, scale: 0, ease: "power2"});
     },2000);
 });
+
+}
