@@ -45,14 +45,31 @@ function displayCont(){
     //hide the alert writing
     document.querySelector("#messageAlert").style.display = "none";
 }
+//add the click event to the message icon
 cont.addEventListener('click', displayCont);
 
+//add click event to the hide button
 hideBtn.addEventListener('click', ()=>{
+    //hide the alert box
     alertBox.style.display = "none";
+    //change the color of the attention icon to grey
     float.style.background = "grey";
+    //add a timeout to the animation
     setTimeout(()=>{
-        gsap.to("#float", {duration: 1.5, scale: 0, ease: "power2"});
-    },2000);
+        //animation to return the attention icon size to 0
+        gsap.to
+        ("#float", 
+        //animation properties
+        //duration
+        {duration: 1.5, 
+        //scale size of box from 1 to 0
+        scale: 0, 
+        //animation style
+        ease: "power2"});
+    //set the timeout to carry out the animation to 2 seconds
+    },
+    2000);
+    
 });
 
 }
