@@ -15,8 +15,7 @@ body{
 }
 #cont{
     position: relative;
-    width: 80%;
-    max-width: 180px;
+    width: min(80%, 180px);
     display: grid;
     place-items: center;
     padding: 50px 30px 30px 30px;
